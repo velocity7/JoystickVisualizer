@@ -55,29 +55,9 @@ Your devices should show up in the Visualizer when you start moving them
 
 ### Configure OBS
 
-1. In OBS add a `Window Capture` source, give it a useful name like "Joystick Visualizer"
-
-![Add Window Capture Source](https://raw.githubusercontent.com/mdjarv/JoystickVisualizer/master/obs_1_add_window_capture.png)
-
-2. Make sure you select `JoystickVisualizer.exe` and you can also uncheck "Capture Cursor"
-
-![Select Inner Window](https://raw.githubusercontent.com/mdjarv/JoystickVisualizer/master/obs_2_add_window_capture.png)
-
-3. Right click on the Source you just created and select `Filters`
-
-![Add filter to source](https://raw.githubusercontent.com/mdjarv/JoystickVisualizer/master/obs_3_sources.png)
-
-4. By clicking the + in the bottom left, add a `Color Key` filter. Change the `Key Color Type` to `Custom Color`
-
-![Setup Color Key filter](https://raw.githubusercontent.com/mdjarv/JoystickVisualizer/master/obs_4_window_capture_filter.png)
-
-5. Click `Select color` and enter `#1e3d5d` in the HTML field
-
-![Select color](https://raw.githubusercontent.com/mdjarv/JoystickVisualizer/master/obs_5_custom_color.png)
-
-6. Save and close the filter settings and you should have an overlay with transparent background to move around your Scene
-
-![Placement](https://raw.githubusercontent.com/mdjarv/JoystickVisualizer/master/obs_6_placement.png)
+1. In OBS add a `Game Capture` source, give it a useful name like "Joystick Visualizer"
+2. Make sure you select `JoystickVisualizer.exe` and you can also uncheck `Capture Cursor`
+3. `Allow Transparency` should also be checked
 
 ### Controlling the camera
 
