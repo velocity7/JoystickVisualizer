@@ -17,7 +17,11 @@ namespace Joystick_Proxy
 {
     public partial class Form1 : Form
     {
+#if DEBUG
+        private static bool _debug = true;
+#else
         private static bool _debug = false;
+#endif
 
         private DirectInput _directInput = new DirectInput();
 
@@ -189,6 +193,11 @@ namespace Joystick_Proxy
                 if (id == "046d:c212")
                 {
                     id = "046d:c215";
+                }
+
+                if (id == "231d:0200")
+                {
+                    id = "044f:b10a";
                 }
 
                 string outgoingString = String.Format("{0},{1},{2}", id, device.Name, e);

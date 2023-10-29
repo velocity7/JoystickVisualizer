@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -34,6 +32,8 @@ public class MainMenu : MonoBehaviour
         portInput.text = Config.GetPort().ToString();
         colorInput.text = "#" + ColorUtility.ToHtmlStringRGB(Config.GetBackgroundColor());
         background.color = Config.GetBackgroundColor();
+
+        Application.targetFrameRate = 60;
     }
 
     string resToString(Resolution res) {

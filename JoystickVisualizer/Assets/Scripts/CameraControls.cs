@@ -32,6 +32,7 @@ public class CameraControls : MonoBehaviour {
 
         Color color;
         if(ColorUtility.TryParseHtmlString(PlayerPrefs.GetString("Color", "#1F3E5D"), out color)) {
+            color.a = 0;
             Camera cam = GetComponent<Camera>();
             cam.backgroundColor = color;
         }
